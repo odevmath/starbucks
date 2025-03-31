@@ -10,19 +10,28 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/img/logo.png">
 
   <title>Starbucks</title>
 </head>
 
-<body>
-  <div class="circle"></div>
+<video class="video-background" autoplay loop muted>
+  <source src="video/Starbucks_Presents.mp4" type="video/mp4">
+  Seu navegador não suporta a tag de vídeo.
+</video>
 
-  <img class="logo" src="img/logo.png" alt="imagem-logo-starbucks">
+
+    <div class="circle"></div>
+
+    <div class="header">
+      <img class="logo" src="img/logo.png" alt="logo da Starbucks">
+      <a href="index.html" class="home-button">Home</a>
+    </div>
 
   <div class="content">
     <div class="textBox">
-      <h1>It's not just coffee... It's <span>Starbucks</span></h1>
-      <p>
+      <h1 id="title">It's not just coffee... It's <span id="highlight">Starbucks</span></h1>
+      <p id="description">
         No Starbucks, cada bebida é uma experiência única, combinando sabores marcantes com uma apresentação
         irresistível.
         Do toque delicado das flores de cerejeira ao sabor intenso do matcha, cada gole desperta os sentidos. E para
@@ -30,22 +39,25 @@
         busca algo vibrante e refrescante, a pitaya traz um toque exótico e envolvente. Descubra essas combinações
         especiais e deixe-se levar por uma jornada de sabor e sofisticação.
       </p>
-      <button>Clique e assista</button>
+      <a href="https://youtu.be/ra-gepjmtSM" target="_blank">
+        <button>Clique e Assista</button>
+      </a>
     </div>
 
     <div class="image">
-      <img class="cup" src="/img/img1.png" alt="imagem-grande-frappuccino">
+      <img class="cup" src="/img/img1.png" alt="Imagem grande de um Frappuccino da Starbucks">
     </div>
   </div>
 
   <div class="menu-box">
-    <img src="img/thumb1.png" class="menu-button" onclick="changeColor('#017143'); changeImage('img/thumb1')"
-      alt="sabor-Matcha-Frappuccino">
-    <img src="img/thumb2.png" class="menu-button" onclick="changeColor('#eb7495'); changeImage('./img/thumb2')"
-      alt="sabor-Sakura-Frappuccino">
-    <img src="img/thumb3.png" class="menu-button" onclick="changeColor('#d752b1'); changeImage('./img/thumb3')"
-      alt="sabor-Strawberry-Frappuccino">
+    <img src="img/thumb1.png" class="menu-button" onclick="changeColor('#017143'); changeImage('img/img1.png', 'matcha')"
+      alt="Matcha Frappuccino">
+    <img src="img/thumb2.png" class="menu-button" onclick="changeColor('#eb7495'); changeImage('img/img2.png', 'sakura')"
+      alt="Sakura Frappuccino">
+    <img src="img/thumb3.png" class="menu-button" onclick="changeColor('#d752b1'); changeImage('img/img3.png', 'dragonfruit')"
+      alt="Dragon Fruit Frappuccino">
   </div>
 </body>
-<script src="scripts.js"></script>
+<script src="scripts.js?v=1.0"></script>
+
 </html>
