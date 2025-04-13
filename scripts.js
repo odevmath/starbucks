@@ -37,3 +37,9 @@ function changeImage(img, flavorKey) {
   highlight = document.getElementById('highlight') // Atualiza a referência do span
   highlight.style.color = flavor.color
 }
+
+// Inicializa o estado inicial
+window.onload = function () {
+  changeColor('#017143');
+  changeImage('./assets/img1.png', 'matcha');
+}
